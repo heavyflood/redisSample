@@ -67,10 +67,10 @@ public class RedisTestApplication {
 		}else {
 			Map<String, String> entry = hop.entries("test:user:"+userid);
 			
-			sb.append("name : " + entry.get("name") + "/n");
-			sb.append("birth : " + entry.get("birth") + "/n");
+			sb.append("name : " + entry.get("name") + "\n");
+			sb.append("birth : " + entry.get("birth") + "\n");
 			sb.append("sex : " + entry.get("sex") + "/n");
-			sb.append("weight : " + entry.get("weight") + "/n");
+			sb.append("weight : " + entry.get("weight") + "\n");
 			sb.append("company : " + entry.get("company"));
 		}
 		
