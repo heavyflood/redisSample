@@ -23,7 +23,3 @@ dependencies {
 	compile group: 'org.springframework.session', name: 'spring-session-data-redis', version: '2.2.0.RELEASE'
 	
 }
-
-test {
-	useJUnitPlatform()
-}
