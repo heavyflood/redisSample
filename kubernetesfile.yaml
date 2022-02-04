@@ -80,7 +80,8 @@ spec:
             preStop:
               exec:
                 command: ["sh", "-c", "sleep 20"]
-
+      imagePullSecrets:
+        - name: regcred
 ---
 
 ## Ingress
