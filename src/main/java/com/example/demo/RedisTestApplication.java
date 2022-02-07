@@ -24,7 +24,7 @@ import org.springframework.data.redis.core.HashOperations;
 public class RedisTestApplication {
 
     @Autowired
-    RedisTemplate<String, Object> redisTemplate;
+	RedisTemplate<String, Object> redisTemplate;
 	
 	public static void main(String[] args) {
 		SpringApplication.run(RedisTestApplication.class, args);

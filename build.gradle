@@ -18,7 +18,7 @@ dependencies {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
 	compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-redis', version: '2.2.0.RELEASE'
-	compile("io.lettuce:lettuce-core:5.0.3.RELEASE")
+	compile("io.lettuce:lettuce-core:5.3.7.RELEASE")
 	// https://mvnrepository.com/artifact/org.springframework.session/spring-session-data-redis
 	compile group: 'org.springframework.session', name: 'spring-session-data-redis', version: '2.2.0.RELEASE'
 	
