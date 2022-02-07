@@ -82,23 +82,23 @@ spec:
                 command: ["sh", "-c", "sleep 20"]
       imagePullSecrets:
         - name: regcred
----
+#---
 
 ## Ingress
-apiVersion: extensions/v1beta1
-kind: Ingress
-metadata:
-  name: ${APP_NAME}-ingress
-  annotations:
-    kubernetes.io/ingress.class: nginx
-    ingress.kubernetes.io/rewrite-target: /
-  labels:
-spec:
-  rules:
-    - host: heavyflood.strato.co.kr # 원하는 host명으로 변경 필요
-      http:
-        paths:
-          - path: "/"
-            backend:
-              serviceName: ${APP_NAME}-service
-              servicePort: http
+#apiVersion: extensions/v1beta1
+#kind: Ingress
+#metadata:
+#  name: ${APP_NAME}-ingress
+#  annotations:
+#    kubernetes.io/ingress.class: nginx
+#    ingress.kubernetes.io/rewrite-target: /
+#  labels:
+#spec:
+#  rules:
+#    - host: heavyflood.strato.co.kr # 원하는 host명으로 변경 필요
+#      http:
+#        paths:
+#          - path: "/"
+#            backend:
+#              serviceName: ${APP_NAME}-service
+#              servicePort: http
