@@ -49,7 +49,7 @@ public class redisConfig {
             String[] url = s.split(":");
             redisClusterConfiguration.clusterNode(url[0],Integer.parseInt(url[1])); }
         );
-        //redisClusterConfiguration.setPassword(redisPassword);
+        redisClusterConfiguration.setPassword(redisPassword);
         return new LettuceConnectionFactory(redisClusterConfiguration);
     }
 
