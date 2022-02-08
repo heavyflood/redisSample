@@ -1,6 +1,11 @@
 server:
   port: 9090
 spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://10.0.143.61:3306/test?characterEncoding=UTF-8&serverTimezone=UTC
+    username: admin
+    password: admin
   redis:
     cluster:
       nodes:

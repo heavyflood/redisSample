@@ -13,8 +13,8 @@ public class KafkaController {
 
     @PostMapping("/push/{message}")
     public String sendMessage(@PathVariable("message") String message) {
-        //System.out.println(String.format("received message : %s", message));
-        producer.sendMessage("message");
+        System.out.println(String.format("received message : %s", message));
+        producer.sendMessage(message);
 
         return "success";
     }
