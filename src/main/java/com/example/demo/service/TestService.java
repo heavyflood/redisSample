@@ -11,7 +11,7 @@ import java.util.List;
 public class TestService {
 
     @Autowired
-    private TestMapper testMapper;
+    public TestMapper testMapper;
 
     public TestVO selectTest(){
         return testMapper.selectTest();
